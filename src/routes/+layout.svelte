@@ -17,7 +17,12 @@ import { AppBar } from '@skeletonlabs/skeleton';
 <!-- App Shell -->
 <AppShell>
 
-	<svelte:fragment slot="header"><AppBar><h1>WELCOME TO MY BLOG</h1></AppBar></svelte:fragment>
+	<svelte:fragment slot="header"><AppBar>
+		<h1>
+	<span class="bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone">WELCOME TO MY BLOG.</span>
+</h1>
+		
+		</AppBar></svelte:fragment>
 	<!-- Router Slot -->
 
 	<slot />
