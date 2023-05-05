@@ -23,6 +23,6 @@ import { AppBar } from '@skeletonlabs/skeleton';
 	<slot />
 	<!-- ---- / ---- -->
 	<br>
-	<svelte:fragment slot="pageFooter">Dibuat Oleh Muhammad Azzam Hilmy</svelte:fragment>
+	<svelte:fragment slot="footer">Dibuat Oleh Muhammad Azzam Hilmy</svelte:fragment>
 
 </AppShell>
