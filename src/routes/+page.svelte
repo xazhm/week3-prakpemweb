@@ -31,17 +31,29 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 			<img alt="" src="https://blog.tokowahab.com/wp-content/uploads/2018/08/resep-jasuke.jpg">
 	</center>
 		</header>
-	<!-- <header class="card-header">ICIKIWIR</header> -->
+
 	<section class="p-4">
 		<center>[JASUKE - Jagung Susu Kedelai]</center><br>
 		<header class="card-header block card card-hover p-4">
 		Jagung Susu Kedelai atau JASUKE adalah minuman sehat yang terbuat dari campuran jagung, susu, dan kedelai. Kombinasi unik ini menghasilkan minuman dengan rasa yang nikmat serta kaya akan nutrisi. Jagung kaya akan serat, sementara kedelai kaya akan protein dan kalsium, dan susu mengandung vitamin D dan kalsium.
 	</header>
 	</section>
+
 	
+<br>
+
+
 	<footer class="card-footer"><center>Cara membuat JASUKE:</center></footer>
 
 <Accordion>
+		<AccordionItem>
+		<svelte:fragment slot="lead"><span class="badge bg-primary-500">></span></svelte:fragment>
+		<svelte:fragment slot="summary">KALKULATOR BAHAN JASUKE</svelte:fragment>
+		<svelte:fragment slot="content">
+	<a href="https://week4-prakpemweb.vercel.app/">		
+<span class="chip variant-filled">Hitung Pengeluaran</span></a>
+		</svelte:fragment>
+	</AccordionItem>
 	<AccordionItem>
 		<svelte:fragment slot="lead"><span class="badge bg-primary-500">></span></svelte:fragment>
 		<svelte:fragment slot="summary">STEP 1</svelte:fragment>
@@ -74,6 +86,9 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
     
     <!-- ... -->
 </Accordion>
+
+
+
 
 
 
