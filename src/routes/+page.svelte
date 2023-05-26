@@ -15,8 +15,8 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 </script>
 
 <br>
-<div class="box px-24">
-<div class="card p-12 shadow-lg shadow">
+<div class="box px-5">
+<div class="card p-5 shadow-lg shadow">
 			 <ol class="breadcrumb">
 	<li><span class="badge variant-filled">Home</span></li>
 	<li class="crumb-separator" aria-hidden>/</li>
@@ -94,26 +94,26 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
 <br>
 
-<div class="box px-24">
-<div class="card p-12 shadow-lg shadow">
-<h6 align="center">BERIKAN KOMENTAR</h6>
+<div class="box px-5">
+<div class="card p-5 shadow-lg shadow">
+<center><h6>BERIKAN KOMENTAR</h6></center>
   <form id="comment-form">
 
 <label class="label">
 	<span>Nama Kamu:</span>
-	<input class="input"  id="name-input" type="text" placeholder="Nama" />
+	<input class="input variant-form-material"  id="name-input" type="text" placeholder="Nama" />
 </label>
 <br>
 
 <label class="label">
 	<span>Email Kamu:</span>
-    <input class="input" type="text" id="email-input" placeholder="Email">
+    <input class="input variant-form-material" type="text" id="email-input" placeholder="Email">
 </label>
 <br>
 
 <label class="label">
 	<span>Komentar Kamu:</span>
-    <textarea class="textarea" id="comment-input" placeholder="Komentar"></textarea>
+    <textarea class="textarea variant-form-material" id="comment-input" placeholder="Komentar"></textarea>
 </label>
 <br>
 
@@ -125,7 +125,7 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
     $(document).ready(function() {
 
       $("#submit-btn").click(function() {
-		        var name = $("#name-input").val();
+		var name = $("#name-input").val();
         var email = $("#email-input").val();
         var comment = $("#comment-input").val();
 
@@ -133,7 +133,7 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
           var newComment = $("<div>")
             .addClass("comment")
-            .html("<br><hr><br><strong>" + name + "</strong><br>" + comment);
+            .html("<br><hr><br><strong>" + name + "</strong> | " + email + "<br>" + comment);
 
           $("#comments").append(newComment);
 
